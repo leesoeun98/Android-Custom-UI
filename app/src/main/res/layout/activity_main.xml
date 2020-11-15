@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/sb_task_detail_status2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:max="9"
+        app:trackColor="@android:color/darker_gray"
+        android:thumb="@drawable/seekbar_thumb"
+        android:progress="0"
+        android:progressTint="@color/orange"
+        android:progressBackgroundTint="@color/grey"/>
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:layout_above="@+id/sb_task_detail_status"
+        android:layout_alignStart="@+id/sb_task_detail_status"
+        android:layout_alignLeft="@+id/sb_task_detail_status"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+</LinearLayout>
